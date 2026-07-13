@@ -1,0 +1,454 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:#f7f6f3;
+    color:#151515;
+    line-height:1.7;
+}
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:25px 40px;
+
+    background:transparent;
+
+    z-index:1000;
+}
+
+.navbar ul{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    gap:45px;
+
+    list-style:none;
+}
+
+.navbar a{
+    color:white;
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:opacity .2s ease;
+}
+
+.navbar a:hover{
+    opacity:.80;
+}
+
+.navbar a.active{
+    font-weight:700;
+
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:6px;
+}
+
+/* =========================
+   RESEARCH DROPDOWN
+========================= */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown > a{
+    color:white !important;
+}
+
+.dropdown > a.active{
+    color:white !important;
+
+    font-weight:700;
+
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:6px;
+}
+
+.mega-menu{
+    position:absolute;
+
+    top:38px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    min-width:300px;
+
+    background:#111;
+
+    border-radius:8px;
+
+    padding:12px 0;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:
+        opacity .2s ease,
+        visibility .2s ease;
+
+    z-index:5000;
+}
+
+.dropdown:hover .mega-menu{
+    opacity:1;
+    visibility:visible;
+}
+
+.mega-menu a{
+    display:block;
+
+    padding:12px 20px;
+
+    color:white !important;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    text-decoration:none;
+
+    white-space:nowrap;
+}
+
+.mega-menu a:hover{
+    background:rgba(255,255,255,.08);
+}
+/* =========================
+   HERO
+========================= */
+
+.project-hero{
+    position:relative;
+    height:31vh;
+    min-height:220px;
+    overflow:hidden;
+}
+
+.project-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:bottom;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:rgba(0,0,0,.45);
+}
+
+.hero-overlay h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+
+/* =========================
+   PAGE WIDTH
+========================= */
+
+.project-intro,
+.content-section{
+    max-width:1200px;
+    margin:0 auto;
+    padding-left:80px;
+    padding-right:80px;
+}
+
+
+/* =========================
+   PROJECT INTRO
+========================= */
+
+.project-intro{
+    margin-top:40px;
+    margin-bottom:60px;
+}
+
+.project-intro h2{
+    font-size: 2.5rem;
+    line-height:1.15;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.project-intro p{
+    max-width:900px;
+    font-size:1.05rem;
+    color:#444;
+}
+
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+.content-section{
+    margin-bottom:55px;
+}
+
+.content-section:last-child{
+    margin-bottom:0;
+}
+
+.content-section h2{
+    font-size:2rem;
+    font-weight:700;
+    color:#151515;
+    margin-bottom:16px;
+}
+
+.content-section h3{
+    font-size:1.2rem;
+    font-weight:600;
+    color:#151515;
+    margin-top:24px;
+    margin-bottom:10px;
+}
+
+.section-content{
+    max-width:900px;
+}
+
+.content-section p{
+    color:#444;
+    margin-bottom:16px;
+}
+
+.content-section ul{
+    padding-left:24px;
+    margin-bottom:0;
+}
+
+.content-section li{
+    color:#444;
+    margin-bottom:10px;
+}
+
+.phase{
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+.phase h3{
+    font-size:1.25rem;
+    font-weight:600;
+
+    margin-bottom:16px;
+
+}
+
+.phase ul{
+    padding-left:24px;
+}
+
+.phase li{
+    margin-bottom:12px;
+    color:#444;
+}
+
+/* REMOVE EXTRA SPACE FROM LAST ELEMENT */
+
+.section-content > *:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================
+   IMAGE CARDS
+========================= */
+
+.image-card{
+    background:white;
+
+    padding:8px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+
+    max-width:900px;
+
+    margin-top:24px;
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.image-card img{
+    width:100%;
+    display:block;
+    border-radius:8px;
+   
+}
+
+.image-card:hover{
+    transform:scale(1.12);
+    box-shadow:0 16px 30px rgba (0,0,0,.15);
+    z-index:100;
+}
+
+.project-overview{
+    overflow:visible;
+}
+ /* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+    .navbar ul{
+        gap:20px;
+    }
+
+    .about-card{
+        grid-template-columns:1fr;
+    }
+
+    .profile-container img{
+        height:450px;
+    }
+
+    .research-grid{
+        grid-template-columns:1fr;
+    }
+}
+.menu-toggle{
+    display:none;
+
+    background:none;
+    border:none;
+
+    color:white;
+
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.site-footer{
+    margin-top:80px;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.site-footer p{
+    color:#555;
+    font-size:.95rem;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    }
+    
+    .menu-toggle{
+        display:block;
+    
+    }
+    
+    
+    .navbar ul{
+        display:none;
+    
+        position:absolute;
+        top:70px;
+        left:24px;
+    
+        background:#111;
+    
+        padding:20px;
+    
+        border-radius:10px;
+    
+        flex-direction:column;
+
+        align-items:flex-start;   /* ADD THIS */
+        text-align:left;
+
+        gap:16px;
+    
+        min-width:220px;
+    
+        box-shadow:0 10px 30px rgba(0,0,0,.3);
+    }
+    .navbar ul li{
+        width:100%;
+    }
+    
+    .navbar ul a{
+        display:block;
+        width:100%;
+        text-align:left;
+    }
+    
+    .navbar ul.show{
+        display:flex;
+    }
+    .mega-menu{
+        position:static;
+    
+        opacity:1;
+        visibility:visible;
+    
+        transform:none;
+    
+        background:none;
+    
+        box-shadow:none;
+    
+        padding-top:10px;
+    
+        min-width:auto;
+    }
+}
+
+
