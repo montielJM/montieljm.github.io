@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+
+    <link rel="stylesheet" href="dissertation.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <button class="menu-toggle">
+            &#9776;
+        </button>
+    
+        <ul>
+    
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+    
+            <li class="dropdown">
+    
+                <a class="active">Research ▾</a>
+    
+                <div class="mega-menu">
+    
+                    <a href="dissertation.html">
+                        Dissertation Research
+                    </a>
+    
+                    <a href="portal.html">
+                        Patient Portal Research
+                    </a>
+    
+                    <a href="app.html">
+                        UX Case Study
+                    </a>
+    
+                </div>
+    
+            </li>
+    
+            <li>
+                <a href="teaching.html">Teaching</a>
+            </li>
+    
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+    
+        </ul>
+    
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="project-hero">
+
+        <img src = "images/hero.jpg">
+
+        <div class="hero-overlay">
+            <h1>Research</h1>
+        </div>
+
+    </header>
+
+    <!-- PROJECT INTRO -->
+
+    <section class="project-intro">
+
+        <h2>
+            Patient Portal Interpretations
+        
+        
+        </h2>
+
+        <p>
+            This ongoing study examines how chronically ill individuals emotionally engage with medical records and how these experiences influence interactions with healthcare providers and healthcare information systems.
+
+        </p>
+
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section class="content-section">
+
+        <h2>Overview</h2>
+
+        <div class="section-content">
+
+            <p>
+                Patients increasingly access medical information through patient portals and electronic health record systems. While these technologies provide new opportunities for information access, they also create emotional challenges when individuals encounter unexpected, confusing, or inaccurate information.
+
+                This study explores how individuals with chronic illnesses emotionally interpret information contained in their medical records and how these interpretations influence communication, trust, and engagement with healthcare providers.
+            </p>
+
+        
+
+        </div>
+
+    </section>
+
+    <!-- RESEARCH OBJECTIVES -->
+
+    <section class="content-section">
+
+        <h2>Research Objectives</h2>
+
+        <div class="section-content">
+
+            <ul>
+                <li>
+                    How do individuals with chronic illnesses emotionally interpret and respond to their medical records accessed through patient portals?
+
+                </li>
+
+                <li>
+                    How do medical records function as boundary objects that influence trust, communication, and emotional engagement between patients and clinicians?
+
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPECTED CONTRIBUTIONS -->
+
+    <section class="content-section">
+
+        <h2>Expected Contributions</h2>
+
+        <div class="section-content">
+
+            <p>
+                This research aims to advance understanding of the emotional dimensions of health information use by exploring how patients interpret and respond to information contained within their medical records. 
+
+            </p>
+
+        </div>
+
+    </section>
+    <script>
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.navbar ul');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        </script> 
+        <footer class="site-footer">
+
+            <p>
+                © 2026 Jesus Montiel • PhD Candidate • Information Science
+            </p>
+        
+        </footer>
+</body>
+
+</html>

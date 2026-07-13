@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+        href="https://fonts.eet">
+    
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <button class="menu-toggle">
+            &#9776;
+        </button>
+    
+        <ul>
+    
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+    
+            <li class="dropdown">
+    
+                <a>Research ▾</a>
+    
+                <div class="mega-menu">
+    
+                    <a href="dissertation.html">
+                        Dissertation Research
+                    </a>
+    
+                    <a href="portal.html">
+                        Patient Portal Research
+                    </a>
+    
+                    <a href="app.html">
+                        UX Case Study
+                    </a>
+    
+                </div>
+    
+            </li>
+    
+            <li>
+                <a href="teaching.html">Teaching</a>
+            </li>
+    
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+    
+        </ul>
+    
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+        <img src = "images/hero.jpg">
+
+        <div class="hero-overlay">
+
+        
+            <h1>Jesus Montiel</h1>
+            <span class="hero-tag">
+                PhD Candidate • Information Science
+            </span>
+            <p>
+                Information Behavior • Human-Computer Interaction 
+            </p>
+            
+
+        </div>
+
+    </header>
+
+    <!-- ABOUT -->
+
+
+    <section id="about" class="about-section">
+        <div class="about-card">
+
+            <div class="profile-container">
+            <img src = "images/profile.jpeg">
+            </div>
+
+            <div class="about-content">
+
+                <span class="research-focus">Research Focus</span>
+
+                <h2>
+                    Exploring Human Interaction with Information and Technology
+                </h2>
+        
+
+                <p>
+                    My research investigates how patients and clinicians interact with medical records, healthcare technologies, and digital health systems.
+                </p>
+                
+                <p>
+                    Using mixed-methods and human-centered research approaches, I examine how healthcare technologies can be designed to better support patient care.
+                </p>
+       
+
+                    <div class="contact-section">
+
+                        <h3>Contact</h3>
+                    
+                        <p>
+                            Email: jmmontie@buffalo.edu
+                        </p>
+                    
+                        <div class="contact-links">
+                        
+                            <a href="https://www.linkedin.com/in/jesus-montiel-9b087b145/">
+                                LinkedIn
+                            </a>
+                    
+                            <span>|</span>
+                    
+                            <a href="https://scholar.google.com/citations?user=2nwPM_0AAAAJ&hl=en">Google Schoolar</a>
+                    
+                        </div>
+                    
+                    </div>
+                    
+
+
+    </section>
+
+    <!-- FEATURED RESEARCH -->
+
+    <section id="research" class="research-section">
+
+        <div class="section-header">
+
+            <h2>Featured Research</h2>
+
+
+
+        </div>
+
+        <div class="research-grid">
+
+            <article class="research-card">
+            <a href = "dissertation.html" class="card-link">
+                <img src="images/Hospital.jpg">
+
+                <div class="card-content">
+
+                    <h3>Duplicate Medical Records</h3>
+
+                    <p>
+                        Understanding how duplicate patient records influence
+                        emergency clinicians' information behavior.
+                    </p>
+
+                </div>
+            </a>
+
+            </article>
+
+            <article class="research-card">
+                <a href = "portal.html" class="card-link">
+                <img src="images/patient.png">
+
+                <div class="card-content">
+
+                    <h3>Patient Portal Interpretation</h3>
+
+                    <p>
+                        Exploring how chronically ill patients interpret
+                        and engage with information in their records.
+                    </p>
+
+                </div>
+            </a>
+            </article>
+
+            <article class="research-card">
+                <a href = "app.html" class="card-link">
+                <img src="images/m3.png">
+
+                <div class="card-content">
+
+                    <h3>Resident Evaluation Application</h3>
+
+                    <p>
+                        Enhancing resident evaluation through healthcare technology design.
+                    </p>
+
+                </div>   
+             </a>
+         </article>
+
+        </div>
+
+    </section>
+    <script>
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.navbar ul');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        </script> 
+
+<footer class="site-footer">
+
+    <p>
+        © 2026 Jesus Montiel • PhD Candidate • Information Science
+    </p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching</title>
+
+    <link rel="stylesheet" href="teaching.css">
+</head>
+
+<body>
+
+<!--NAVIGATION -->
+
+        <nav class="navbar">
+
+            <button class="menu-toggle">
+                &#9776;
+            </button>
+        
+            <ul>
+        
+                <li>
+                    <a href="index.html" >Home</a>
+                </li>
+        
+                <li class="dropdown">
+        
+                    <a>Research ▾</a>
+        
+                    <div class="mega-menu">
+        
+                        <a href="dissertation.html">
+                            Dissertation Research
+                        </a>
+        
+                        <a href="portal.html">
+                            Patient Portal Research
+                        </a>
+        
+                        <a href="app.html">
+                            UX Case Study
+                        </a>
+        
+                    </div>
+        
+                </li>
+        
+                <li>
+                    <a href="teaching.html"class="active">Teaching</a>
+                </li>
+        
+                <li>
+                    <a href="publications.html">Publications</a>
+                </li>
+        
+            </ul>
+        
+        </nav>
+    <!-- HERO -->
+
+    <header class="project-hero">
+
+        <img src = "images/hero.jpg">
+
+        <div class="hero-overlay">
+            <h1>Teaching</h1>
+        </div>
+
+    </header>
+
+    <!-- PROJECT INTRO -->
+
+    <section class="project-intro">
+  
+        <h1>
+            Guest Lecturer
+        
+        
+        </h1>
+
+        <p>
+            <b>University of Strathclyde, Glasgow, UK</b>
+             <p></p>
+             MSc in Digital Health Systems | Spring 2026
+             <p></p>Instructor: Dr. Lisa McCann
+        </p>
+        <ul>
+            <li>
+                Delivered a guest lecture on EHR Implementation: A Sociotechnical Perspective.
+
+            </li>
+
+            <li>
+                Discussed sociotechnical factors affecting electronic health record adoption, implementation, and optimization in healthcare organizations.
+
+            </li>
+        </ul>
+ 
+    </section>
+    <script>
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.navbar ul');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        </script> 
+        <footer class="site-footer">
+
+            <p>
+                © 2026 Jesus Montiel • PhD Candidate • Information Science
+            </p>
+        
+        </footer>
+    </body>
+    </html>

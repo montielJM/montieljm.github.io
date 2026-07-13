@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+
+    <link rel="stylesheet" href="publications.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <button class="menu-toggle">
+            &#9776;
+        </button>
+    
+        <ul>
+    
+            <li>
+                <a href="index.html" >Home</a>
+            </li>
+    
+            <li class="dropdown">
+    
+                <a>Research ▾</a>
+    
+                <div class="mega-menu">
+    
+                    <a href="dissertation.html">
+                        Dissertation Research
+                    </a>
+    
+                    <a href="portal.html">
+                        Patient Portal Research
+                    </a>
+    
+                    <a href="app.html">
+                        UX Case Study
+                    </a>
+    
+                </div>
+    
+            </li>
+    
+            <li>
+                <a href="teaching.html">Teaching</a>
+            </li>
+    
+            <li>
+                <a href="publications.html"class="active">Publications</a>
+            </li>
+    
+        </ul>
+    
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="project-hero">
+
+        <img src = "images/hero.jpg">
+
+        <div class="hero-overlay">
+            <h1>Publications</h1>
+        </div>
+
+    </header>
+
+    <!-- PROJECT INTRO -->
+
+    <section class="project-intro">
+  
+        <h2 class="year-heading">
+           2025
+
+        </h2>
+
+        <ul>
+            <li>
+                Latham, D., Montiel, J., Julien, H., & Gross, M. (2025). Structuration Theory as a Lens for Examining Agency and Constraints in Information Literacy Pedagogy. Proceedings of the ALISE Annual Conference. https://doi.org/10.21900/j.alise.2025.1940
+
+
+            </li>
+       
+
+            <li>
+                Montiel, J., Kundu, S., Schlater, N., McLean, L., & McLean, M. (2025). Generative Artificial Intelligence Practices Among Major Educational Groups in the United States. Proceedings of the Association for Information Science and Technology, 62(1), 1600-1602. https://doi.org/10.1002/pra2.1480
+
+            </li>
+        </ul>
+      
+        <h2 class="year-heading">
+            2024
+         
+         </h2>
+ 
+         <ul>
+             <li>
+                Julien, H., Latham, D., Gross, M., Montiel, J. (2024). Understanding Information Literacy Instructional Practices: Implications for Preparing Pre-Service Librarians. Proceedings of the ALISE Annual Conference. https://doi.org/10.21900/j.alise.2024.1686
+
+ 
+ 
+             </li>
+ 
+             <li>
+                Montiel, J., Moy, A. Q., & Dodson, S. (2024). Healthcare Disparities in Telemedicine Access and Use During the COVID-19 Pandemic. Proceedings of the Association for Information Science and Technology, 61(1):1036-1038. https://doi.org/10.1002/pra2.1178
+
+
+             </li>
+         </ul>
+ 
+    </section>
+    <script>
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.navbar ul');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        </script> 
+        <footer class="site-footer">
+
+            <p>
+                © 2026 Jesus Montiel • PhD Candidate • Information Science
+            </p>
+        
+        </footer>
+</body>
+</html>

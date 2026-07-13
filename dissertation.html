@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+
+    <link rel="stylesheet" href="dissertation.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <button class="menu-toggle">
+            &#9776;
+        </button>
+    
+        <ul>
+    
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+    
+            <li class="dropdown">
+    
+                <a class="active">Research ▾</a>
+    
+                <div class="mega-menu">
+    
+                    <a href="dissertation.html">
+                        Dissertation Research
+                    </a>
+    
+                    <a href="portal.html">
+                        Patient Portal Research
+                    </a>
+    
+                    <a href="app.html">
+                        UX Case Study
+                    </a>
+    
+                </div>
+    
+            </li>
+    
+            <li>
+                <a href="teaching.html">Teaching</a>
+            </li>
+    
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+    
+        </ul>
+    
+    </nav>
+
+    <!-- HERO -->
+
+    <header class="project-hero">
+
+        <img src = "images/hero.jpg">
+
+        <div class="hero-overlay">
+            <h1>Research</h1>
+        </div>
+
+    </header>
+
+    <!-- PROJECT INTRO -->
+
+    <section class="project-intro">
+
+        <h2>
+            Duplicate Medical Records in Emergency Care 
+        
+
+        </h2>
+        
+        <p>
+            This study investigates how duplicate medical records affect
+            emergency clinicians' information seeking, decision-making,
+            and workflow within electronic health record systems.
+        </p>
+
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section class="content-section">
+
+        <h2>Overview</h2>
+
+        <div class="section-content">
+
+            <p>
+                Electronic health records are intended to provide clinicians
+                with accurate and accessible patient information. However,
+                duplicate medical records can create fragmented information
+                environments that complicate clinical work and healthcare
+                decision-making.
+            </p>
+
+            <p>
+                My dissertation examines how duplicate medical records
+                function as sociotechnical conditions that shape disturbances
+                in clinical work practices.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- RESEARCH OBJECTIVES -->
+
+    <section class="content-section">
+
+        <h2>Research Objectives</h2>
+
+        <div class="section-content">
+
+            <ul>
+                <li>
+                    To explore clinicians' cognitive load, emotions, and
+                    information behaviors as they interact with duplicate
+                    medical records during emergency care.
+                </li>
+
+                <li>
+                    To identify and characterize underlying tensions
+                    revealed through clinicians' interactions with duplicate
+                    medical records during emergency care.
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- CONCEPTUAL MECHANISMS -->
+
+    <section class="content-section">
+
+        <h2>Conceptual Mechanisms</h2>
+
+        <div class="section-content">
+
+            <p>
+                Activity Theory provides the conceptual lens for examining
+                interactions among clinicians, electronic health records,
+                organizational workflows, and duplicate patient information.
+            </p>
+
+            <p>
+                The framework supports understanding how clinicians navigate
+                tensions, adapt information behavior, and make decisions
+                within complex healthcare environments.
+            </p>
+
+            <div class="image-card">
+                <img src = "images/map.jpg">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- METHODS -->
+
+    <section class="content-section">
+
+        <h2>Methods</h2>
+
+        <div class="section-content">
+
+            <p>
+                This study employs a sequential explanatory mixed-methods
+                design to investigate clinician information behavior when
+                interacting with duplicate medical records.
+            </p>
+<div class="phase">
+            <h3>Phase 1: Quantitative</h3>
+
+            <ul>
+                <li>Survey of emergency clinicians</li>
+                <li>
+                    Analysis of relationships among cognitive,
+                    emotional, and behavioral dimensions.
+                </li>
+            </ul>
+        </div>
+        <div class = "phase">
+            <h3>Phase 2: Qualitative</h3>
+
+            <ul>
+                <li>Semi-structured interviews</li>
+                <li>Thematic analysis</li>
+                <li>Identification of tensions and adaptive behavior.</li>
+            </ul>
+    
+        </div>
+
+            <div class="image-card">
+                <img src = "images/methods.jpg">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPECTED CONTRIBUTIONS -->
+
+    <section class="content-section">
+
+        <h2>Expected Contributions</h2>
+
+        <div class="section-content">
+
+            <p>
+                This research aims to advance understanding of the emotional dimensions of health information use by exploring how patients interpret and respond to information contained within their medical records.
+            </p>
+
+        </div>
+
+    </section>
+    <script>
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.navbar ul');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        </script> 
+        <footer class="site-footer">
+
+            <p>
+                © 2026 Jesus Montiel • PhD Candidate • Information Science
+            </p>
+        
+        </footer>
+</body>
+
+</html>
